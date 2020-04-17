@@ -1,0 +1,6 @@
+# Example cron jobs. 
+# Every 15 minutes updates and logs std & err to fb.log, wich is monthly deleted.
+
+*/15 0-1,7-23 * * * PATH_TO_VIRUALENV/bin/python -u /home/pi/notiProton/notiProton.py >> /home/pi/protonotifier/log.log 2>&1 &
+*/15 0-1,7-23 * * * PATH_TO_VIRUALENV/bin/python -u /home/pi/notiProton/notiProton.py >> /home/pi/protonotifier/log.log 2>&1 &
+00 3 1,15 * * rm /home/pi/protonotifier/log.log
