@@ -42,6 +42,7 @@ def create_driver():
             options.add_argument("--start-maximized")
             options.add_argument('--headless')
         driver = webdriver.Chrome(options=options)
+        display = ''
         print( 'Driver loaded')
     else:
         from pyvirtualdisplay import Display
