@@ -5,7 +5,7 @@ This python script is running on a Raspberry Pi 3 on buster.
 
 ## Dependencies
 ```
-sudo apt install chromium-browser, chromium-chromedriver, xvfb, python3, python3-pip
+sudo apt install git chromium-browser chromium-chromedriver xvfb python3 python3-pip
 pip3 install pipenv 
 ```
 ## Installation
