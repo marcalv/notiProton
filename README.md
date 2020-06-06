@@ -13,7 +13,7 @@ Clone from repo, install dependencies with pipenv, create config.py and customiz
 ```
 cd /home/pi
 git clone https://github.com/marcalv/notiProton
-cd fijoBlock
+cd notiProton
 pipenv install
 pipenv run pip install cffi
 pipenv run pip install cryptography
