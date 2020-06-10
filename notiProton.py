@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 import time
 import sys
+import os
 import datetime
 import atexit
 from selenium import webdriver
@@ -29,6 +30,7 @@ def exit_handler():
     print('Bye')
     print("")
     print("")
+    sys.exit()
 
 atexit.register(exit_handler)
 
@@ -161,7 +163,10 @@ print("===================================================")
 from config import *
 
 #Initialize db and bot
-db = TinyDB('db.json')
+installation_path = os.path.dirname(os.path.realpath(__file__))
+db_path = (os.path.join(installation_path, 'db.json'))
+db = TinyDB(db_path
+)
 bot = telegram.Bot(token=botToken)
 
 #Create driver
